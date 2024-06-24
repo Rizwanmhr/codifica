@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html body{
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .slick-slider .slick-slide {
+      padding: 0 15px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .slick-slider .slick-slide {
+      padding: 0 5px;
+  }
+}
+
+.gmnoprint{
+  display: none;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  overflow: hidden;
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 99px;
+    background: #e9e9e9;
+    height: 90%;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #bebebe;
+    border-radius: 99px;
+    border: 1px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #F2C146;
+  }
+
+  .before::before {
+    content: "";
+    width: 30px;
+    box-shadow: inset 10px 0 8px -10px #00000026;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translate(100%);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutToTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.3s forwards;
+}
+
+.animate-slideOutToTop {
+  animation: slideOutToTop 0.3s forwards;
+}
+/* Custom CSS */
+input.custom-checkbox:checked + .checkmark::before {
+  content: "✓";
+  display: block;
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+}
+
