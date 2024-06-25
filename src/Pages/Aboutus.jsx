@@ -309,7 +309,7 @@ function Aboutus() {
                   alt=""
                 />
               </div>
-              <div className="flex items-start gap-[7.8rem] max-lg:flex-col-reverse mt-32 max-lg:mt-0">
+              <div className="flex items-start justify-between max-lg:flex-col-reverse mt-32 max-lg:mt-0 gap-20">
                 <img
                   src={`${stagging}/assets/aboutsec (1).png`}
                   className="xl:w-[33rem] w-[24rem] max-lg:w-full max-lg:mt-10"

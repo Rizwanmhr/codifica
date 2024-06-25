@@ -81,70 +81,118 @@ const Section = ({
       </div>
     </section> */}
     <section className="max-w-[67.5rem] m-auto lg:py-14 max-md:mb-8">
-      <div className="px-8 py-4 rounded-lg shadow-lg">
-        <p className="text-[1.7rem] max-xl:text-[1.5rem] font-bold text-[#3A3A3A] mb-3 max-lg:mb-6">
-          Codi Service Assistant
-        </p>
-        <p className=" mb-4 text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
-          Our AI Codi Service Assistant will elevate your business operations
-          through seamlessly performing the following tasks:
-        </p>
-        <ul className="list-disc text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
-          <li className=" mb-4 leading-6">
-            <strong>24/7 Customer Support:</strong> Codi answers anytime,
-            anywhere.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Accurate and Concise Information:</strong> Provides
-            accurate, easy-to-understand info.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Uninterrupted Availability:</strong> Available 24/7/365, no
-            breaks needed.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Professional and Emotionless Response:</strong> Delivers
-            consistent, professional responses.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Seamless Integration:</strong> Integrates with 6000+
-            platforms for a smooth workflow.
-          </li>
-        </ul>
+      <div className="max-lg:px-4">
+        <div className="flex justify-between max-md:flex-col items-center">
+          <div className="w-[58%] max-md:w-full">
+            <p className="text-[1.7rem] max-xl:text-[1.5rem] font-bold text-[#3A3A3A] mb-3 max-lg:mb-6">
+              Codi Service Assistant
+            </p>
+            <p className="mb-4 text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
+              Our AI Codi Service Assistant will elevate your business
+              operations through seamlessly performing the following tasks:
+            </p>
+            <ul className="list-disc text-[1.18rem] max-xl:text-sm text-[#3A3A3A] ml-8">
+              <li className=" mb-4 leading-tight pt-2">
+                <strong>24/7 Customer Support:</strong> Codi answers anytime,
+                anywhere.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Accurate and Concise Information:</strong> Provides
+                accurate, easy-to-understand info.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Uninterrupted Availability:</strong> Available 24/7/365,
+                no breaks needed.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Professional and Emotionless Response:</strong> Delivers
+                consistent, professional responses.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Seamless Integration:</strong> Integrates with 6000+
+                platforms for a smooth workflow.
+              </li>
+            </ul>
+          </div>
+          <div className="w-[38%] max-md:w-full">
+            <img
+              src={`${stagging}/assets/service.jpeg`}
+              alt="service"
+              className="w-[25rem] h-[31.8rem] object-cover"
+            />
+          </div>
+        </div>
+        <div className="flex justify-start gap-2 max-md:justify-center">
+          <Link to={buttonlink}>
+            <button className="text-black font-bold bg-[#EED55E] rounded-lg py-3 px-6 max-xl:text-sm">
+              Learn More
+            </button>
+          </Link>
+          <button
+            onClick={() => setShowPopup(true)}
+            className="text-white font-bold bg-black rounded-lg py-3 px-6 max-xl:text-sm hover:bg-white hover:text-black hover:border hover:border-black  transition-all duration-300 transform"
+          >
+            Book a Demo
+          </button>
+        </div>
       </div>
     </section>
     <section className="max-w-[67.5rem] m-auto lg:py-14">
-      <div className="px-8 py-4 rounded-lg shadow-lg">
-        <p className="text-[1.7rem] max-xl:text-[1.5rem] font-bold text-[#3A3A3A] mb-3 max-lg:mb-6">
-          Codi Training Assistant
-        </p>
-        <p className="mb-4 text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
-          Revolutionize your training with the AI Codi Training Assistant.
-          Discover how AI Codi Training Assistant features can efficiently
-          improve your training outcome:
-        </p>
-        <ul className="list-disc text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
-          <li className=" mb-4 leading-6">
-            <strong>Tailored Training Experience:</strong> Tailor courses to
-            individual needs.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Instructor Dashboard:</strong> Monitor trainee progress with
-            a comprehensive dashboard.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Intuitive Learning:</strong> Codi clarifies complex concepts
-            with focused slides.
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Interactive Audio Comprehension:</strong> Trainees choose
-            their preferred language for narration (90+ options).
-          </li>
-          <li className=" mb-4 leading-6">
-            <strong>Advanced Visual Learning:</strong> AI-generated videos
-            enhance understanding and make learning fun.
-          </li>
-        </ul>
+      <div className="max-lg:px-4">
+        <div className="flex justify-between items-center max-md:flex-col-reverse">
+          <div className="w-[38%] max-md:w-full">
+            <img
+              src={`${stagging}/assets/ctaland (2).png`}
+              alt="ctaland"
+              className="w-[25rem] h-[31.7rem] object-cover"
+            />
+          </div>
+          <div className="w-[58%] max-md:w-full">
+            <p className="text-[1.7rem] max-xl:text-[1.5rem] font-bold text-[#3A3A3A] mb-3 max-lg:mb-6 max-lg:pt-5">
+              Codi Training Assistant
+            </p>
+            <p className="mb-4 text-[1.18rem] max-xl:text-sm text-[#3A3A3A] leading-6">
+              Revolutionize your training with the AI Codi Training Assistant.
+              Discover how AI Codi Training Assistant features can efficiently
+              improve your training outcome:
+            </p>
+            <ul className="list-disc text-[1.18rem] max-xl:text-sm text-[#3A3A3A] ml-8 pb-5">
+              <li className="mb-4 leading-6">
+                <strong>Tailored Training Experience:</strong> Tailor courses to
+                individual needs.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Instructor Dashboard:</strong> Monitor trainee progress
+                with a comprehensive dashboard.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Intuitive Learning:</strong> Codi clarifies complex
+                concepts with focused slides.
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Interactive Audio Comprehension:</strong> Trainees
+                choose their preferred language for narration (90+ options).
+              </li>
+              <li className=" mb-4 leading-6">
+                <strong>Advanced Visual Learning:</strong> AI-generated videos
+                enhance understanding and make learning fun.
+              </li>
+            </ul>
+            <div className="flex justify-start max-md:justify-center gap-2">
+              <Link to={buttonlink}>
+                <button className="text-black font-bold bg-[#EED55E] rounded-lg py-3 px-6 max-xl:text-sm">
+                  Learn More
+                </button>
+              </Link>
+              <button
+                onClick={() => setShowPopup(true)}
+                className="text-white font-bold bg-black rounded-lg py-3 px-6 max-xl:text-sm hover:bg-white hover:text-black hover:border hover:border-black  transition-all duration-300 transform"
+              >
+                Book a Demo
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </>
@@ -487,7 +535,7 @@ function Landing() {
                 customer satisfaction and decision-making processes.
               </p>
             </div>
-            <div className="lg:flex justify-between gap-[7.8rem] items-center max-xl:px-20 max-lg:px-2 mt-14 max-lg:mt-7">
+            <div className="lg:flex justify-between items-center max-lg:px-2 gap-16 mt-14 max-lg:mt-7">
               <div>
                 {questions.map((item, index) => (
                   <div>
@@ -616,7 +664,7 @@ function Landing() {
             {stories.map((n) => (
               <div className="">
                 <div
-                  className={`lg:flex items-start gap-[7.8rem] mt-14 max-lg:mt-10`}
+                  className={`lg:flex items-start justify-between mt-14 max-lg:mt-10`}
                 >
                   <div className="w-[40%] max-xl:w-[52%] max-lg:w-full text-sm max-xl:text-xs text-[#3A3A3A]">
                     {/* <p className=' text-[#3A3A3A] mb-3'>Middle East</p> */}
@@ -651,8 +699,8 @@ function Landing() {
             Unlock powerful growth for your business. Simple{" "}
             <br className="max-lg:hidden" /> solutions, immediate results.
           </p>
-          <div className="overflow-x-auto whitespace-nowrap mt-7 min-w-[700px]">
-            <table className="min-w-full bg-white">
+          <div className="overflow-x-auto whitespace-nowrap mt-7">
+            <table className="w-full bg-white  min-w-[650px]">
               <thead>
                 <tr className="w-full border-b border-gray-300">
                   <th className="w-[40%] py-6 text-left text-[#F2C146] font-bold text-[2rem]">

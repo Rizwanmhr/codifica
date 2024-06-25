@@ -188,7 +188,7 @@ function CTA() {
             </div>
             {sectiondata.map((n) => (
               <div
-                className={`lg:flex items-center gap-[7.8rem] ${
+                className={`lg:flex items-start justify-between ${
                   n.reverse && "flex-row-reverse"
                 } mt-32 max-lg:mt-10`}
               >
@@ -216,7 +216,7 @@ function CTA() {
           <section className="pb-20 max-lg:px-4 max-w-[67.5rem] m-auto">
             <div className="space-y-5 mt-16 w-full">
               <div className="text-[1.87rem] font-bold">Features</div>
-              <div className="lg:flex items-center gap-[7.8rem] pt-6">
+              <div className="lg:flex items-center justify-between gap-20 pt-6">
                 <img
                   src={`${stagging}/assets/ctaimg.png`}
                   className="xl:w-[33rem] object-cover w-[34rem] xl:h-[35rem] h-[45rem] max-lg:h-[30rem]"
@@ -248,7 +248,7 @@ function CTA() {
               <div className="text-[1.87rem] max-md:text-xl font-bold pt-5">
                 Potential Market
               </div>
-              <div className="lg:grid grid-cols-3 gap-y-10 gap-[7.8rem]">
+              <div className="lg:grid grid-cols-3 gap-y-10 gap-x-20">
                 {news.map((n) => (
                   <div className="space-y-4 max-md:text-lg text-[1.5rem] mt-10">
                     <p className="h-10 font-bold">{n.title}</p>
@@ -265,7 +265,7 @@ function CTA() {
           </section>
 
           <section className="max-lg:px-5 max-lg:flex flex-col bg-[#F1F1F1] mt-16 max-md:mt-6 justify-end relative overflow-hidden py-16 max-md:py-8 z-10 mb-6">
-            <div className="grid grid-cols-3 max-md:grid-cols-1 gap-[7.8rem] max-md:gap-2 max-w-[67.5rem] m-auto">
+            <div className="grid grid-cols-3 max-md:grid-cols-1 gap-5 max-md:gap-2 max-w-[67.5rem] m-auto">
               {productsData.map((item, i) => {
                 return (
                   <div key={i} className="w-full max-md:px-3 py-12">

@@ -62,7 +62,7 @@ function CaseStudyLearning() {
           </div>
         </section>
 
-        <section className="max-lg:px-4 mt-12 lg:flex gap-[7.8rem]">
+        <section className="max-lg:px-4 mt-12 lg:flex gap-16">
           <div>
             <div>
               {casestudy3?.role && (

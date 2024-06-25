@@ -264,7 +264,7 @@ function Contactus() {
               </div>
             </div> */}
           {/* )}} */}
-          <section className="lg:flex justify-center overflow-hidden mb-10 gap-[7.8rem]">
+          <section className="lg:flex justify-center overflow-hidden mb-10">
             <div className="space-y-5 xl:mt-24 mt-16 max-lg:mt-0 w-full overflow-hidden">
               <div className="xl:text-[2.5rem] lg:w-[90%] text-[2.1rem] max-lg:text-[1.7rem] xl:leading-[3.5rem] leading-[2.9rem] max-lg:leading-10">
                 Give Your Business <br className="max-lg:hidden" /> The Codifica
@@ -435,7 +435,7 @@ function Contactus() {
               <div className="xl:text-[4rem] w-[90%] text-[2.2rem] max-lg:text-[1.7rem] xl:leading-[3.5rem] leading-[2.9rem]">
                 What Sets Codifica.Ai Apart?
               </div>
-              <div className="lg:flex items-center justify-between pt-6 gap-[7.8rem]">
+              <div className="lg:flex items-start justify-between pt-6 gap-20">
                 <img
                   src={`${stagging}/assets/contactimg (3).png`}
                   className="xl:w-[33rem] w-[28rem] xl:h-[35rem] h-[43rem] max-lg:h-[30rem]"

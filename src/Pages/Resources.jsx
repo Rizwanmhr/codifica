@@ -175,7 +175,7 @@ function Resources() {
             id="news"
             className="pb-16 scroll-m-20 max-xl:px-16 pt-2 max-lg:px-4"
           >
-            <div className="lg:grid grid-cols-3 gap-y-10 gap-[7.8rem]">
+            <div className="lg:grid grid-cols-3 gap-y-10 gap-x-20">
               {news
                 .slice(start, end)
                 .filter(

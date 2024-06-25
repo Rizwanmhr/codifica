@@ -77,7 +77,7 @@ function SolutionsHR() {
           </div>
           <button
             onClick={() => setShowPopup(true)}
-            className="text-white bg-black rounded-2xl px-10 py-3 mt-8 max-lg:text-xs"
+            className="text-white bg-black rounded-2xl px-10 py-3 mt-8 max-lg:text-xs hover:bg-white hover:text-black hover:border hover:border-black  transition-all duration-300 transform"
           >
             Book a Demo
           </button>
@@ -130,16 +130,14 @@ function SolutionsHR() {
 
       <section className="max-lg:px-4 max-w-[67.5rem] m-auto">
         <div className="text-center lg:mx-[20%]">
-          <p className="text-[3rem] max-lg:text-2xl">
-            {HR?.section2heading}
-          </p>
+          <p className="text-[3rem] max-lg:text-2xl">{HR?.section2heading}</p>
           <p className="text-[1.5rem] max-lg:text-sm max-lg:px-5 mt-3">
             {HR?.section2description}
           </p>
         </div>
         {HR?.sectiondata.map((n) => (
           <div
-            className={`lg:flex items-center gap-[7.8rem] ${
+            className={`lg:flex items-start justify-between ${
               n.reverse && "flex-row-reverse"
             } mt-32 max-lg:mt-10`}
           >
@@ -154,7 +152,7 @@ function SolutionsHR() {
               <button
                 // onClick={() => setcalendlyopen(true)}
                 onClick={() => setShowPopup(true)}
-                className="text-white bg-black text-sm rounded-xl px-5 py-3 mt-8"
+                className="text-white bg-black text-sm rounded-xl px-5 py-3 mt-8 hover:bg-white hover:text-black hover:border hover:border-black  transition-all duration-300 transform"
               >
                 Book a Demo
               </button>
@@ -165,7 +163,7 @@ function SolutionsHR() {
 
       {/* <p className="pb-20"></p> */}
       <section className="max-lg:px-5 max-lg:flex flex-col bg-[#F1F1F1] mt-16 max-md:mt-6 justify-end relative overflow-hidden py-16 max-md:py-8 z-10 mb-6">
-        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-[7.8rem] max-md:gap-2 max-w-[67.5rem] m-auto">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-5 max-md:gap-2 max-w-[67.5rem] m-auto">
           {productsData.map((item, i) => {
             return (
               <div key={i} className="w-full max-md:px-3 py-12">
